@@ -1,0 +1,30 @@
+# Core RAG system dependencies
+langchain==0.1.20
+langchain-community==0.0.38
+
+# Vector database (pure Python version, no C++ compilation required)
+faiss-cpu==1.8.0
+# For GPU support, use: faiss-gpu==1.8.0
+
+# Local open-source model support
+# Uses Ollama as a local LLM service (requires separate Ollama installation)
+# Or use HuggingFace Transformers
+transformers==4.38.2
+torch==2.2.1
+sentence-transformers==2.5.1
+
+# Document processing
+pypdf==3.1.0
+chardet==5.2.0
+
+# Utility libraries
+python-dotenv==1.0.1
+pydantic==2.6.3
+pydantic-settings==2.2.1
+
+# Logging
+loguru==0.7.2
+
+# Optional: FastAPI for building API services
+fastapi==0.110.0
+uvicorn==0.27.1
